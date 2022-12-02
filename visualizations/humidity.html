@@ -18,15 +18,45 @@
 
   <body>
     <!-- Start of navbar -->
+    <nav class = "navbar navbar-expand-lg navbar-light bg-light">
+      <ul>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="../visualizations/">Cloudiness</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="../visualizations/humidity.html">Humidity</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="../visualizations/temp.html">Temperature</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="../visualizations/wind.html">Wind</a>
+          </div>
+        </li>
+        <li>
+          <a href="../comparison.html">Comparison</a>
+        </li>
+        <li>
+          <a href="../data.html">Data</a>
+        </li>
+      </ul>
+    </nav>
     <!-- End of navbar -->
 
     <!-- Start of container -->
-
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Summary: Latitude vs. Humidity</h1>
+        <img src="../assets/images/Fig2.png" alt="..." class="pull-left" style="height:300px">
+        <p>Humidity seems to be relatively uncorrelated with distnace from the equator. This would imply that humdiity is influenced by other, more local factors such as elevation, distance from bodies of water, etc.</p>
+      </div>  
+   
           <!-- Start of Visualizations imageNav Area -->
           <!-- End of the Visualizations imageNav Area -->
 
     <!-- End of container -->
-
+    </div>
     <!-- jQuery CDN -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
